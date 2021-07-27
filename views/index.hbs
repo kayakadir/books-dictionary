@@ -1,0 +1,71 @@
+<div class="jumbotron">
+  <h1 class="display-3">Welcome to Node.js with Handlebars</h1>
+  <p class="lead">This demonstrates a form with <mark>Node.js</mark></p>
+  <hr class="my-2" />
+</div>
+<form action="/" method="post" role="form" enctype="application/x-www-form-urlencoded">
+  <div class="row">
+    <div class="form-group col-sm-6">
+      <label for="first_name">First Name</label>
+      <input
+        type="text"
+        class="form-control"
+        name="first_name"
+        id="first_name"
+        aria-describedby="helpId"
+        placeholder=""
+      />
+      <small id="helpId" class="form-text text-muted">Help text</small>
+    </div>
+    <div class="form-group col-sm-6">
+      <label for="last_name">Last Name</label>
+      <input
+        type="text"
+        class="form-control"
+        name="last_name"
+        id="last_name"
+        aria-describedby="helpId"
+        placeholder=""
+      />
+      <small id="helpId" class="form-text text-muted">Help text</small>
+    </div>
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input
+        type="email"
+        class="form-control"
+        name="email"
+        id="email"
+        aria-describedby="emailHelpId"
+        placeholder=""
+      />
+      <small id="emailHelpId" class="form-text text-muted">Help text</small>
+    </div>
+    <div class="form-group col-md-6">
+      <label for="pw">Password</label>
+      <input
+        type="password"
+        class="form-control"
+        name="pw"
+        id="pw"
+        placeholder="Password"
+      />
+    </div>
+    <div class="form-group col-md-6">
+      <label for="pw_confirm">Confirm Password</label>
+      <input
+        type="password"
+        class="form-control"
+        name="pw_confirm"
+        id="pw_confirm"
+        placeholder="Confirm Password"
+      />
+    </div>
+    
+    <div class="d-grid btn-block mt-3">{{!-- mt : margin & top --}}
+      <button type="submit" name="" id="" class="btn btn-primary btn-lg btn-block">Submit</button>
+    </div>
+    
+  </div>
+
+</form>
